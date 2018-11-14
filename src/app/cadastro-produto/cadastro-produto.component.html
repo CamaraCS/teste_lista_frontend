@@ -1,0 +1,50 @@
+
+<div class="cadastrar_class">
+  <div id="formulario_cadastrar_produto">
+  <h3 id="cadastrar_titulo_produto">Cadastrar produto</h3>
+  <form class="form_cadastrar_produto">
+    <mat-form-field class="form_field_cadastro_produto">
+      <input matInput placeholder="Nome do produto">
+    </mat-form-field>
+
+    <mat-form-field class="form_field_cadastro_produto">
+      <input matInput placeholder="Quantidade (Kilo ou Litro)">
+    </mat-form-field>
+
+    <mat-form-field class="form_field_cadastro_produto">
+      <input matInput placeholder="Preço">
+    </mat-form-field>
+
+  </form>
+  <form class="form_cadastrar_produto_direito">
+
+    <mat-form-field class="form_field_cadastro_produto_direito">
+      <mat-select placeholder="Tipo">
+        <mat-option *ngFor="let marca of marcas" [value]="marca.value">
+          {{marca.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="form_field_cadastro_produto_direito">
+      <mat-select placeholder="Marca">
+        <mat-option *ngFor="let marca of marcas" [value]="marca.value">
+          {{marca.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="form_field_cadastro_produto_direito">
+      <mat-select placeholder="Mercado">
+        <mat-option *ngFor="let marca of marcas" [value]="marca.value">
+          {{marca.viewValue}}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+  </form>
+  
+
+</div>
+<button mat-raised-button color="primary" id="button_cadastrar_produto">Cadastrar</button>
+<button mat-raised-button color="primary" id="button_cancelar_produto">Cancelar</button>
+</div>

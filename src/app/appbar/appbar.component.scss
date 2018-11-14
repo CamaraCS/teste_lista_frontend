@@ -1,0 +1,8 @@
+@import "~@angular-mdc/theme/material";
+.app_tool_bar {
+@include mdc-top-app-bar-fill-color(rgb(140, 167, 196))
+}
+#lista_compra_texto {
+    font-size: 50px;
+}
+//$mdc-theme-primary: #388e3c;
